@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let currentYear = new Date().getFullYear();
+        // let year = 2005;
+        // let ago  = currentYear - year;
+        // let voteabl = (ago<18)?"quá trẻ":"đủ tuổi";
+        // console.log(voteabl);
+
+
+        // let hours = new Date().getHours();
+        // if(hours<18)
+        // {
+        //     console.log(hours);
+        // }
+
+
+        // let hours = new Date().getHours();
+
+        // // C2
+        // let meta = (hours<18)?"chào buổi tối":"chào buổi sáng"
+        // console.log(meta);
+
+        // // C1
+        // if(hours<18){
+        //     console.log("chào buổi sáng");
+        // }else{
+        //     console.log("chào buổi tối");
+        // }
+
+
+        // let day = new Date().getDay();
+        // switch (day) {
+        //     case 0:
+        //         console.log("chủ nhật");
+        //         break;
+        //     case 1:
+        //         console.log("thứ 2");
+        //         break;
+        //     case 2:
+        //         console.log("thứ 3");
+        //         break;
+        //     case 3:
+        //         console.log("thứ 4");
+        //         break;
+        //     case 4:
+        //         console.log("thứ 5");
+        //         break;
+        //     case 5:
+        //         console.log("thứ 6");
+        //         break;
+        //     case 6:
+        //         console.log("thứ 7");
+        //         break;
+        //     default:
+
+        // }
+
+
+        let monny = 10000;
+        switch (monny) {
+            case 12000:
+                console.log("caffe sữa");
+                break;
+            case 10000:
+                console.log("caffe đá");
+                break;
+            case 8000:
+                console.log("sting");
+                break;
+            case 2000:
+                console.log("trà đá");
+                break;
+        }
+
+        let a = Number(prompt("Nhập a: "));
+        let b = Number(prompt("Nhập b: "));
+        let c = Number(prompt("Nhập c: "));
+        let delta = b * b - 4 * a * c
+        if (delta > 0) {
+            let x1 = -b + Math.sqrt(delta) / 2 * a;
+            let x2 = -b - Math.sqrt(delta) / 2 * a;
+            console.log('Phương trình có hai nghiệm phân biệt' + x1, 'x2' + x2);
+        } else if (delta == 0) {
+           
+            console.log("Phương trình có nghiệm kép x1,x2");
+        } else {
+            console.log("Phương trình không có nghiệm");
+        }
+
+
+
+        let d = Number(prompt("nhập a:"));
+        let e = Number(prompt("nhập b:"));
+
+        let vt = Math.pow(a, 3) - Math.pow(b, 3);
+        let vp = (a - b) * (Math.pow(a, 2) + a * b + Math.pow(b, 2));
+        if (vt === vp) {
+            console.log("Điều kiện đúng: a^3 - b^3 = (a - b)(a^2 + ab + b^2)");
+        } else {
+            console.log("Điều kiện sai");
+        }
+
+        let vts = Math.pow(a, 3) + Math.pow(b, 3);
+        let vps = (a + b) * (Math.pow(a, 2) - a * b + Math.pow(b, 2));
+        if (vts === vps) {
+            console.log("Điều kiện đúng: a^3 + b^3 = (a + b)(a^2 - ab + b^2)");
+        } else {
+            console.log("Điều kiện sai");
+        }
+
+        let vtg = (a - b) * 3;
+        let vpg = Math.pow(a, 3) - Math.pow(3, a, 2, b) + Math.pow(3, a, b, 2) - Math.pow(b, 3);
+        if (vtg === vpg) {
+            console.log("Điều kiện đúng: (a - b) * 3 = a^3 - 3a^2b + 3ab^2 - b^3");
+        } else {
+            console.log("Điều kiện sai");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+      //mảng một chiều
+      var myArray = ["a",10,true,{name:"Nam"}];
+      let myNumbers = [1,2,3,4,5];
+      const myObjects = [{name:"thuy"},{name:"Mai"}];
+      console.log(myArray);
+      console.log(myArray[0]);
+      console.log(myArray[1]);
+      console.log(myArray[2]);
+      console.log(myArray[3]);
+      console.log(typeof(myArray[0]));
+      console.log(typeof(myArray[1]));
+      console.log(typeof(myArray[2]));
+      console.log(typeof(myArray[3]));
+
+    </script> -->
+
+    <!-- <script>
+      //mảng đa chiều
+      var students = [
+        {name:"Hoa"},
+        ["Mai",30],
+        ["Nam",25],
+        ["Trung",22]
+      ];
+      let srt = students[1].name;
+      let srt1 = students[1][1];
+      console.log("tên tôi la "+srt,"nam nay tôi "+srt1,"tuổi");
+     
+    </script> -->
+
+    <script>
+
+       // *push
+        // var traiCay=["Táo","Chuối"];
+        // traiCay.push("Cam","Nho"); // push là thêm 1 hoặc nhiều phần tử vào cuối mảng
+        // console.log(traiCay);
+
+        // *pop
+        // var traiCay=["Táo","Chuối","Cam","Nho"];
+        // traiCayCuoi=traiCay.pop();
+        // console.log(traiCayCuoi); // loại bỏ và trả về phần tử ở cuối
+        // console.log(traiCay);
+
+        // *shift
+        // var traiCay=["Táo","Chuối","Cam","Nho"];
+        // traiCayDau=traiCay.shift();
+        // console.log(traiCayDau);  //loại bỏ và trả về phần tử ở đầu
+        // console.log(traiCay);
+
+        // *unshift
+        // var traiCay=["Táo","Chuối","Cam","Nho"];
+        // traiCay.unshift("Xoài","Dâu"); // thêm 1 hoặc nhiều phần tử vào đầu mảng
+        // console.log(traiCay);
+     
+        // *splice
+        // var colors = ["red","green","blue","purple"];
+        // colors.splice(1,2,"yellow","orange"); // loại bỏ và thêm phần tử khỏi mảng *1 là vị trí bắt đầu xóa *2 là xóa bao nhiêu
+        // console.log(colors);
+
+
+        currentYear = new Date().getFullYear();
+        let Alice_birdthOfyear = prompt("nhập vào năm sinh của Alice");
+        let Bob_birdthOfyear = prompt("nhập vào năm sinh của Bob ");
+        let Charlie_birdthOfyear = prompt("nhập vào năm sinh của Charlie ");
+
+        let Alice_graduate = prompt("năm tốt nghiệp của Alice");
+        let Bob_graduate = prompt("năm tốt nghiệp của Bob");
+        let Charlie_graduate = prompt("năm tốt nghiệp của Charlie");
+
+        let Alice_age = currentYear - Alice_birdthOfyear;
+        let Bob_age = currentYear - Bob_birdthOfyear;
+        let Charlie_age = currentYear - Charlie_birdthOfyear;
+
+        var list = [
+            "Danh sách sinh viên",
+            [1, 2, 3],
+            { name: "Alice", age: Alice_age, graduate: Alice_graduate },
+            { name: "Bob", age: Bob_age, graduate: Bob_graduate },
+            { name: "Charlie", age: Charlie_age, graduate: Charlie_graduate }
+        ];
+        
+        let student = list.slice(2);
+        document.write(`<h1 class=text-center>Danh sách sinh viên</h1>`)
+
+        
+
+    </script>
+
+</body>
+
+</html>
